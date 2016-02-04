@@ -1,15 +1,14 @@
-This is a simplified version of a blind auction site. In a blind
-auction, bidders do not see how much other bidders have bid.
+This is a simplified version of a blind auction site. 
 
-#### All Users
+#### All Users Can
 
-- Browse available items
+- browse available items
 
-#### Unregistered Users**
+#### Unregistered Users Can
 
-- Register a new account
+- register for a new account
 
-#### Registered Users
+#### Registered Users Can
 
 - Sign in
 - Sign out
@@ -17,36 +16,7 @@ auction, bidders do not see how much other bidders have bid.
 - Place bids on items
 - Have a profile showing their listing and bidding activity
 
-### Completing the App
-
-Complete as much of this CRUD app as possible in the time allowed.  If time is
-running out and it looks like the app will not be completed, continue to work
-through the releases in order and complete as much as possible. Be sure to ask
-questions, if you find yourself stuck.
-
-## Releases
-### Pre-release:  Setup
-We'll need to make sure that everything is set up before we begin working on the application.  From the command line, navigate to the `part-3` directory of the phase 2 assessment.  Once there, run ...
-
-0. `$ bundle`
-0. `$ bundle exec rake db:create`
-
-### Release 0: User Registration
-
-Users will need to register for a new account. Create a link on the home page
-that will take them to a page where they can enter their desired username and
-password. There are a two constraints to this feature:
-
-1. The username must be unique
-1. The password must be at least 6 characters long
-
-If both constraints are met, the user should be considered logged in and
-redirected to the home page where all references to "Register" are removed.
-
-If either constraint is not met, the user should see the registration form and
-the associated error messages.
-
-### Release 1: Login/Logout
+### Login/Logout
 
 #### Login
 
@@ -71,7 +41,7 @@ Given there is a previously registered user and they are currently logged in:
 1. When the user clicks on the logout link they should be taken to the home page
    and the links "Register" and "Login" should both be visible.
 
-### Release 2: CRUD'ing a Resorouce
+### CRUD
 
 The user's profile page is where users are able to manage their listed items.
 We'll start off by giving them the ability to add an item and then work through
@@ -89,11 +59,6 @@ _Given:_
    should include things like a name and/or title, description, when the user
    would like the auction to start and when it should stop.
 
-*Note*: When creating and or editing an item, you'll need to create forms that
-allow you to enter dates. The HTML5 datetime input type is tricky to use with
-ActiveRecord. Consider using something like `<input type="text"
-name="my-date">` in the markup. When filling in the field, use the `YYYY-MM-DD`
-or `YYYY-MM-DD HH:MM:SS` format (e.g. 2015-04-01 14:30:00).
 
 After submitting an item, the user should be back on their profile page.
 
@@ -137,12 +102,7 @@ _Given_
 1. When the user clicks the delete link, the user profile page should reload and
    the item should no longer be visible.
 
-### Release 3: Bidding
-
-Up until now, the home page has largely just contained links to allow the user
-to register or login, or if they were logged in, to logout. Now that users have
-the ability to create items for others to bid on, let's start filling in the
-homepage.
+### Bidding
 
 #### Viewing Active Items
 
@@ -187,10 +147,7 @@ In place of the bidding form, a user should see the text "To place a bid please
 login or register." Both login and register should be links taking the user to
 their respective pages.
 
-### Release 4: Bid on Items on the Profile Page
-
-Now that we can bid on items, let's make it easy to keep track of the things we
-have bid on.
+### Bid on Items on the Profile Page
 
 #### Bid on Items
 
@@ -214,8 +171,3 @@ Create a section to display the items they have won. This is items that are no
 longer active (end date is before today) and the bid placed on the item is the
 highest of all the bidders.
 
-## Conclusion
-
-Part-3 wraps up the assessment.  If you haven't already done so, commit your
-changes.  Please wait until the end of the assessment period to submit your
-solution.
