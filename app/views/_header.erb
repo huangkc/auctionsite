@@ -4,11 +4,11 @@
   <!-- <h1><a href = "/">HOME</a></h1> -->
   <p>
     <% if current_user %>
-      <a href="/users/<%= current_user.id %>">Hi, <%= @current_user.username %></a>
+      <a class="hello" href="/users/<%= current_user.id %>">Hi, <%= @current_user.username %></a>
       <a class = "logout" href="/logout">logout</a>
     <% else %>
       <a class = "login" href="/sessions/new">login</a>
-      <a class = "sign up" href="/users/new">register</a>
+      <a class = "sign_up" href="/users/new">register</a>
       <% end %>
   </p>
 </header>
