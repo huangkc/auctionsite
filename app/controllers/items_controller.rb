@@ -1,6 +1,6 @@
 get '/items' do
-  @items = Item.all.take(40)
-  @active_items = Item.active_items.take(20)
+  @items = Item.all.take(20)
+  @active_items = Item.active_items.take(10)
   erb :'/items/index'
 end
 
