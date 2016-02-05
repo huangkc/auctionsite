@@ -11,7 +11,7 @@ img {
 }
 
 .active-bids {
-  border: 1px solid red;
+  /*border: 1px solid red;*/
 
   /*background: grey;*/
   font-weight: bold;
@@ -19,7 +19,7 @@ img {
 }
 
 .winning-bids {
-  border: 1px solid red;
+  /*border: 1px solid red;*/
   
   /*background: grey;*/
   font-weight: bold;
@@ -27,7 +27,7 @@ img {
 }
 
 .all-items {
-  border: 1px solid red;
+  /*border: 1px solid red;*/
   
   /*background: grey;*/
   font-weight: bold;
