@@ -3,11 +3,12 @@ img {
   height: 50px;
 }
 
+.button {color: red;}
 .user-items-list {
   /*background: grey;
   /*border: 1px solid red;*/
   font-weight: bold;
-  color: white;
+  color: red;
 }
 
 .active-bids {
@@ -37,21 +38,35 @@ a {
 
 body {
   counter-reset:section;
-  background-color: #F6F6EF;
+  /*background-color: #F6F6EF;*/
   font-family: Verdana;
-  max-width: 700px;
+  /*max-width: 100%;*/
+  margin: auto;
+}
+
+.sign_up, .logout, .login, .hello {color: white;}
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.form-signin {
+  max-width: 330px;
+  padding: 15px;
   margin: 0 auto;
 }
-.sign_up, .logout, .login, .hello {color: red;}
 #bid-link {
   text-decoration: none;
   color: red;
 }
 
 header {
-  /*background-color: #00ffff;*/
+  background-color: #333;
   /*background-color: #F4712D;*/
+  /*border: 1px solid red;*/
   padding: 5px 5px;
+
 }
 
 header h1 {
