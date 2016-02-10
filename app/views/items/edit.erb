@@ -2,8 +2,8 @@
 
 <form action="/items/<%= @item.id%>" method="post">
 <input type="hidden" name="_method" value="put">
-<p><input type="text" value="<%= @item.title %>" name = "title"></input></p>
-<p><textarea type="text" placeholder="<%= @item.description %>" name = "description"></textarea></p>
+<p><input class="input-box" type="text" value="<%= @item.title %>" name="title"></input></p>
+<p><textarea rows="10" cols="50" type="text" placeholder="<%= @item.description %>" name = "description"></textarea></p>
 <p><input type="text" value="<%= @item.auction_start %>" name = "auction_start"></input></p>
 <p><input type="text" value="<%= @item.auction_end %>" name = "auction_end"></input></p>
 <input type="submit" value="Submit"/>

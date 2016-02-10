@@ -3,6 +3,8 @@ img {
   height: 50px;
 }
 
+.input-box {width: 560px;}
+
 .btn {   
   outline: none;
   display: inline-block;
@@ -25,28 +27,28 @@ img {
   /*background: grey;
   /*border: 1px solid red;*/
   font-weight: bold;
-  color: red;
+  color: black;
 }
 
 .active-bids {
   /*border: 1px solid red;*/
   /*background: grey;*/
   font-weight: bold;
-  color: red;
+  color: black;
 }
 
 .winning-bids {
   /*border: 1px solid red;*/
   /*background: grey;*/
   font-weight: bold;
-  color: red;
+  color: black;
 }
 
 .all-items p {
   /*border: 1px solid red;*/
   /*background: grey;*/
   font-weight: bold;
-  color: red;
+  color: black;
 }
 
 a {
