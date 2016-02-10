@@ -1,11 +1,11 @@
-<div class="container">
-<h1>Login</h1>
+<div class="form-signin">
+<h2>Please log in</h2>
 <form action="/sessions" method="post" >
 	<label for="username">Username:</label>    
     <input id="username" type="text" name="username" placeholder="username"><br><br>
     <label for="password">Password:</label>
     <input id="password" type="password" name="password" placeholder="password"><br><br>
-    <input type="submit" value="Login"/>
+<button class="btn btn-lg btn-primary btn-block" type="submit">Login</button>
 </form>
 
 <% if flash[:error]%>

@@ -1,3 +1,4 @@
+<div class="container">
 <% if current_user == nil %>
 	<h4> Please <a href="/sessions/new">login</a> or <a href="/users/new">sign up</h4></a>
 <% else %>
@@ -6,7 +7,7 @@
 <div class="user-items-list">
 <ul>
 	<p><% @items.each do |item| %></p>
-		<p>Title: <%= item.title %></p>
+		<p>Product: <%= item.title %></p>
         <% if item.user_id == current_user.id %> 
 		  <form id="<%= item.id%>" action="/items/<%= item.id%>" method="POST">	
 		  <input type="hidden" name="_method" value="delete">
@@ -20,7 +21,6 @@
 	    <% end %>
 	  <% end %>
 	  
-
 	<div class="add-link">
 		<p><a id="add-item-link" href="/items/new">Add a new item</a></p>
 	</div>
@@ -29,31 +29,32 @@
 
 <div class="active-bids">
 	<p>Your active bid(s):</p>
-	<ol>
+	<ul>
 		<% @bids.each do|bid| %>
 		<li><p><%= bid.item.title %>
 		$<%= bid.bid_price %></p></li>
 	    <% end %>
-	</ol> 
+	</ul> 
 </div>
 
 <div class="winning-bids">
 	<p>Item(s) you have won:</p>
-	<ol>
+	<ul>
 	<% @winning_bids.each do |bid| %>
 		<li><p><%= bid.item.title %>
 		$<%= bid.bid_price %></p></li>
 	<% end %>
-	</ol>
+	</ul>
 </div>
 
 <div class="all-items">
 	<p><h3>All Items:</h3></p>
-<ol>
+<ul>
 	<% @all_items.each do|item| %>
 		<li><a href="/items/<%= item.id %>"><p><%= item.title %></p></a></li>
 	<% end %>
-</ol>
+</ul>
 <div>
 
 <% end %>
+</div>
