@@ -3,6 +3,8 @@ img {
   height: 50px;
 }
 
+ul {list-style-type: none;}
+
 .input-box {width: 560px;}
 
 .btn {   
