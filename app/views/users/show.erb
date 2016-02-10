@@ -21,7 +21,6 @@
 	    <% end %>
 	  <% end %>
 	  
-
 	<div class="add-link">
 		<p><a id="add-item-link" href="/items/new">Add a new item</a></p>
 	</div>
@@ -30,31 +29,31 @@
 
 <div class="active-bids">
 	<p>Your active bid(s):</p>
-	<ol>
+	<ul>
 		<% @bids.each do|bid| %>
 		<li><p><%= bid.item.title %>
 		$<%= bid.bid_price %></p></li>
 	    <% end %>
-	</ol> 
+	</ul> 
 </div>
 
 <div class="winning-bids">
 	<p>Item(s) you have won:</p>
-	<ol>
+	<ul>
 	<% @winning_bids.each do |bid| %>
 		<li><p><%= bid.item.title %>
 		$<%= bid.bid_price %></p></li>
 	<% end %>
-	</ol>
+	</ul>
 </div>
 
 <div class="all-items">
 	<p><h3>All Items:</h3></p>
-<ol>
+<ul>
 	<% @all_items.each do|item| %>
 		<li><a href="/items/<%= item.id %>"><p><%= item.title %></p></a></li>
 	<% end %>
-</ol>
+</ul>
 <div>
 
 <% end %>
