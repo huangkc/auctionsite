@@ -11,7 +11,7 @@
         <% if item.user_id == current_user.id %> 
 		  <form id="<%= item.id%>" action="/items/<%= item.id%>" method="POST">	
 		  <input type="hidden" name="_method" value="delete">
-<button class="btn btn-lg btn-primary btn-block" type="submit">Delete this item</button>
+			<button class="btn btn-lg btn-primary btn-block" type="submit">Delete this item</button>
 
 		  </form></li>	
 		  </li>
