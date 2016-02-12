@@ -3,9 +3,13 @@ img {
   height: 50px;
 }
 
-ul {list-style-type: none;}
+ul {
+  list-style-type: none;
+}
 
-.input-box {width: 560px;}
+.input-box {
+  width: 560px;
+}
 
 .btn {   
   outline: none;
@@ -23,14 +27,15 @@ ul {list-style-type: none;}
   border-radius: 10px;
 }
 
-.button {color: red;}
+.button {
+  color: red;
+}
 .user-items-list {
-  /*background: grey;
-  /*border: 1px solid red;*/
-  font-weight: bold;
   color: black;
 }
-
+.title {
+  font-weight: bold;
+}
 .active-bids {
   /*border: 1px solid red;*/
   /*background: grey;*/
@@ -109,9 +114,7 @@ header p a {
   font-size: 1.5em;
   color: black;
   text-decoration: none;
+  padding: 10px;
 }
 
-header p a:nth-child(n + 2):before {
-  content: " | ";
-}
 

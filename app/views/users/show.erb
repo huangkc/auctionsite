@@ -7,7 +7,8 @@
 <div class="user-items-list">
 <ul>
 	<p><% @items.each do |item| %></p>
-		<p><%= item.title %></p>
+		<p class="title"><%= item.title %></p>
+		<p class="description"><%= item.description %></p>
         <% if item.user_id == current_user.id %> 
 		  <form id="<%= item.id%>" action="/items/<%= item.id%>" method="POST">	
 		  <input type="hidden" name="_method" value="delete">
