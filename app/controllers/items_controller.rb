@@ -15,6 +15,7 @@ end
 post '/items' do
   @item = Item.new(user_id: current_user.id, title: params[:title], description: params[:description], auction_start: params[:auction_start], auction_end: params[:auction_end])
   if @item.save
+    # p params[:title]
     redirect "/users/#{current_user.id}"
   else 
     status 400

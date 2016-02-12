@@ -7,16 +7,18 @@
 <div class="user-items-list">
 <ul>
 	<p><% @items.each do |item| %></p>
-		<p>Product: <%= item.title %></p>
+		<p><%= item.title %></p>
         <% if item.user_id == current_user.id %> 
 		  <form id="<%= item.id%>" action="/items/<%= item.id%>" method="POST">	
 		  <input type="hidden" name="_method" value="delete">
-		  <input type="submit" value="Delete this item">
+			<button class="btn btn-lg btn-primary btn-block" type="submit">Delete this item</button>
+
 		  </form></li>	
 		  </li>
 		  <div class="<%= item.id%>">
-		  <a id="edit-link" href="/items/<%= item.id %>/edit">Edit this item</a>
-		  </div>
+		  <a id="edit-link" href="/items/<%= item.id %>/edit"><button class="btn btn-lg btn-primary btn-block" type="submit">Edit this item</button>
+		  </a>
+      </div>
 		  <hr>
 	    <% end %>
 	  <% end %>
@@ -46,15 +48,6 @@
 	<% end %>
 	</ul>
 </div>
-
-<div class="all-items">
-	<p><h3>All Items:</h3></p>
-<ul>
-	<% @all_items.each do|item| %>
-		<li><a href="/items/<%= item.id %>"><p><%= item.title %></p></a></li>
-	<% end %>
-</ul>
-<div>
 
 <% end %>
 </div>
