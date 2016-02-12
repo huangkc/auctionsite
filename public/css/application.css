@@ -26,19 +26,16 @@ ul {
   background-color: #315481;
   border-radius: 10px;
 }
-.description {
-  font-family: sans-serif;
-}
+
 .button {
   color: red;
 }
 .user-items-list {
-  /*background: grey;
-  /*border: 1px solid red;*/
-  font-weight: bold;
   color: black;
 }
-
+.title {
+  font-weight: bold;
+}
 .active-bids {
   /*border: 1px solid red;*/
   /*background: grey;*/
