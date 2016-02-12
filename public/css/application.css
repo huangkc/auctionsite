@@ -3,9 +3,13 @@ img {
   height: 50px;
 }
 
-ul {list-style-type: none;}
+ul {
+  list-style-type: none;
+}
 
-.input-box {width: 560px;}
+.input-box {
+  width: 560px;
+}
 
 .btn {   
   outline: none;
@@ -22,8 +26,12 @@ ul {list-style-type: none;}
   background-color: #315481;
   border-radius: 10px;
 }
-
-.button {color: red;}
+.description {
+  font-family: sans-serif;
+}
+.button {
+  color: red;
+}
 .user-items-list {
   /*background: grey;
   /*border: 1px solid red;*/
