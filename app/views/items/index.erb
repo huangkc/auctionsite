@@ -1,19 +1,19 @@
 <div class="jumbotron">
-<div class="container">
-<h2>Online Auction</h2>
-<h3>Click on the links below to see product details</h3>
-<ul>
-	<% @items.each do|item| %>	
-	<li><a href="/items/<%= item.id%>"><%= item.title %></li>
-	<% end %>
-</ul>
+	<div class="container">
+		<h2>Online Auction</h2>
+		<h3>Click on the links below to see product details</h3>
+		<ul>
+			<% @items.each do|item| %>	
+			<li><a href="/items/<%= item.id%>"><%= item.title %></li>
+			<% end %>
+		</ul>
 
-<!-- <p><h3>Active Items</h3></p>
+		<!-- <p><h3>Active Items</h3></p>
 
-<ol>
-	<% @active_items.each do|item| %>
-	<li><a href="/items/<%= item.id%>"><%= item.title %></a></li>
-	<% end %>
-</ol> -->
-</div>
+		<ol>
+			<% @active_items.each do|item| %>
+			<li><a href="/items/<%= item.id%>"><%= item.title %></a></li>
+			<% end %>
+		</ol> -->
+	</div>
 </div>
