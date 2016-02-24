@@ -1,3 +1,12 @@
+body {
+  counter-reset:section;
+  /*background-color: #F6F6EF;*/
+  font-family: Verdana;
+  /*max-width: 100%;*/
+  margin: auto;
+  font-size: 1em;
+}
+
 img {
   width: 50px;
   height: 50px;
@@ -5,6 +14,10 @@ img {
 
 ul {
   list-style-type: none;
+}
+
+.product-list {
+  font-size: 1.5em;
 }
 
 .input-box {
@@ -61,13 +74,6 @@ a {
   text-decoration: none;
 }
 
-body {
-  counter-reset:section;
-  /*background-color: #F6F6EF;*/
-  font-family: Verdana;
-  /*max-width: 100%;*/
-  margin: auto;
-}
 
 .sign_up, .logout, .login, .hello {color: white;}
 

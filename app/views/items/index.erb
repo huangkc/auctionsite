@@ -2,7 +2,7 @@
 	<div class="container">
 		<h2>Online Auction</h2>
 		<h3>Click on the links below to see product details</h3>
-		<ul>
+		<ul class="product-list">
 			<% @items.each do|item| %>	
 			<li><a href="/items/<%= item.id%>"><%= item.title %></li>
 			<% end %>
