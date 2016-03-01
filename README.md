@@ -1,6 +1,4 @@
-This CRUD application is a simplified version of a blind auction site. 
-
-Deployed at https://auctionsite.herokuapp.com/
+###This CRUD application is a simplified version of a blind auction site and is deployed at https://auctionsite.herokuapp.com/.
 
 #### All Users Can
 
@@ -19,11 +17,11 @@ Deployed at https://auctionsite.herokuapp.com/
 - Have a profile showing their listing and bidding activity
 
 
-### CRUD
+###CRUD
 
 The user's profile page is where users are able to manage their listed items.
 
-When loggedin, users can
+When logged in, users can
 
 * Add a new item to the list
 * See all exsting items
