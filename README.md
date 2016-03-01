@@ -1,4 +1,4 @@
-####This CRUD application is a simplified version of a blind auction site and is deployed at https://auctionsite.herokuapp.com/.
+This CRUD application is a simplified version of an online auction site where users can place bids on items and manage their own inventory. It is deployed at https://auctionsite.herokuapp.com/.
 
 #### All Users Can
 
