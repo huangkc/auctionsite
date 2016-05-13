@@ -8,7 +8,7 @@ body {
 }
 
 .navbar {
-  /*background-color: #333;*/
+  background-color: lightgray;
   height: 50px;
 }
 
@@ -43,18 +43,22 @@ a:hover {
 }
 
 .jumbotron {
-  height: 720px;
+  height: 450px;
   background-size: cover;
-  background-color: red;
-
+  background: url('../snow.jpeg');
+  /*background-color: red;*/
   /*border: 1px solid red;*/
 }
 
-.jumbotron h2, h3 {
+.jumbotron p {
+  padding-top: 80px;
+  color: white;
+  font-size: 2.3em;
+}
+.jumbotron h2 {
   text-align: center;
   font-size: 1.5em;
   font-weight: bold;
-  padding-top:160px;
 }
 
 img {
@@ -151,8 +155,6 @@ header {
   padding-bottom: 5px;
   /*min-height: 30px;*/
   padding-top: 20px;
-
-
 }
 
 header h1 {
@@ -179,4 +181,35 @@ header p a {
   padding: 15px;
 }
 
+footer {
+  /*background-color: lightgray;*/
+  margin-top: 45px;
+  padding-top: 5px;
+  border-top: 1px solid #eaeaea;
+  color: black;
+}
+
+footer a {
+  font-size: 1em;
+  color: #555;
+}
+
+footer a:hover {
+  color: #222;
+  text-decoration: none;
+}
+
+footer small {
+  float: left;
+}
+
+footer ul {
+  float: right;
+  list-style: none;
+}
+
+footer ul li {
+  float: left;
+  margin-left: 15px;
+}
 
