@@ -1,10 +1,10 @@
 body {
-  counter-reset:section;
+  /*counter-reset:section;*/
   /*background-color: #F6F6EF;*/
-  font-family: Verdana;
+  /*font-family: Verdana;*/
   /*max-width: 100%;*/
-  margin: auto;
-  font-size: 1em;
+  /*margin: auto;*/
+  /*font-size: 1em;*/
 }
 
 img {
@@ -96,7 +96,7 @@ header {
   background-color: #333;
   /*background-color: #F4712D;*/
   /*border: 1px solid red;*/
-  padding: 5px 5px;
+  padding: 0;
 
 }
 
