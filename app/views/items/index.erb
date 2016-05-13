@@ -1,28 +1,44 @@
 <div class="jumbotron">
 	<div class="container">
 
-		<p>Welcome to the Blind Auctioneer</p>
+		<p>Welcome to the Online Auctioneer</p>
+
 			<button class="btn-sm" type="submit"><a class="sign_up" href="/users/new">Get Started Now</a></button>
 			
 			<button class="btn-sm" type="submit"><a class="login" href="/sessions/new">Have an Account? Log in</a></button>
 	</div>
 </div>
 
-<div>
+<div class="products-banner">
 	<div class="container">
 		<h3>Click on the links below to see product details</h3>
 		<ul class="product-list">
 			<% @items.each do|item| %>	
-			<li><a href="/items/<%= item.id%>"><%= item.title %></li>
+			<li><a href="/items/<%= item.id%>"><%= item.title %></li></a>
 			<% end %>
 		</ul>
 
-		<!-- <p><h3>Active Items</h3></p>
+		<!-- <p><h3>Active Items</h3></p> -->
 
 		<ol>
-			<% @active_items.each do|item| %>
-			<li><a href="/items/<%= item.id%>"><%= item.title %></a></li>
+			<% @active_items.each do |item| %>
+			<li><a href="/items/<%= item.id%>"><%= item.title %></a>
+			</li>
 			<% end %>
-		</ol> -->
+		</ol>
 	</div>
 </div>
+
+<div class="bottom-banner">
+	<div class="container">
+		<h2>Contact us</h2>
+		<a href="mailto:huangkc05@gmail.com">
+    <p>Email</p></a>
+    <a href="#"><p>+1 917.518.6181</p></a>
+		<a href="linkedin.com/in/huankc"><p>LinkedIn</p>
+		<a href="https://twitter.com/huangkc05"><p>Twitter</p></a>
+	</div>
+</div>
+
+
+

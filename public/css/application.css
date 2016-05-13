@@ -7,8 +7,24 @@ body {
   /*font-size: 1em;*/
 }
 
+.products-banner{
+  height: 600px;
+}
+
+.bottom-banner {
+  height: 500px;
+  background: url('../skyline.jpeg');
+  background-size: cover;
+}
+
+.bottom-banner p {
+  font-size: 1.2em;
+}
+
 .navbar {
   background-color: gray;
+  /*background: url('../mountain_range.jpeg');*/
+  /*background-size: cover;*/
   height: 50px;
 }
 
@@ -44,7 +60,9 @@ a:hover {
 
 .jumbotron {
   height: 450px;
-  background: url('../snow.jpeg');
+  background: url('../background.jpeg');
+
+  /*background: url('../snow.jpeg');*/
   background-size: cover;
   /*background-color: red;*/
   /*border: 1px solid red;*/
@@ -59,6 +77,21 @@ a:hover {
   text-align: center;
   font-size: 1.5em;
   font-weight: bold;
+}
+
+.bottom-banner {
+  color: black;
+  text-align: center;
+  font-family: 'Ubuntu';
+}
+
+.bottom-banner h2 {
+ font-size: 1.5em;
+ padding-top: 50px;
+}
+
+.bottom-banner a {
+ color: blue;
 }
 
 img {
