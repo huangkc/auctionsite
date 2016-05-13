@@ -8,12 +8,12 @@ body {
 }
 
 .navbar {
-  background-color: lightgray;
+  background-color: gray;
   height: 50px;
 }
 
 .navbar a {
-  color: blue;
+  /*color: blue;*/
   font-size: 1.5em;
   text-decoration: none;
 }
@@ -92,6 +92,30 @@ ul {
   color: white;
   background-color: #315481;
   border-radius: 10px;
+}
+
+.btn-sm{
+  border: none;
+  border-radius: 2px;
+  display: inline-block;
+  height: 36px;
+  line-height: 36px;
+  outline: 0;
+  padding: 0 2rem;
+  text-transform: uppercase;
+  vertical-align: middle;
+  -webkit-tap-highlight-color: transparent;
+  background-color: #315481;
+  /*background-color: rgba(0,0,0,0.2)*/
+  color: white;
+}
+
+a.login, a.sign_up {
+  color: white;
+}
+
+a:hover {
+  color:red;
 }
 
 .button {
