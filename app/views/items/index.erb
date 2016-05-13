@@ -1,7 +1,9 @@
 <div class="jumbotron">
 	<div class="container">
-		<h2>Online Auction</h2>
+
+		<h2>Welcome to the Blind Auction</h2>
 		<h3>Click on the links below to see product details</h3>
+
 		<ul class="product-list">
 			<% @items.each do|item| %>	
 			<li><a href="/items/<%= item.id%>"><%= item.title %></li>
