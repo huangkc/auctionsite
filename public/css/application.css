@@ -1,11 +1,13 @@
 body {
-  /*counter-reset:section;*/
+  counter-reset:section;
   /*background-color: #F6F6EF;*/
   /*font-family: Verdana;*/
   /*max-width: 100%;*/
   /*margin: auto;*/
   /*font-size: 1em;*/
 }
+
+
 
 img {
   width: 50px;
@@ -75,7 +77,9 @@ a {
 }
 
 
-.sign_up, .logout, .login, .hello {color: white;}
+.sign_up, .logout, .login, .hello {
+  color: black;
+}
 
 .container {
   padding-right: 15px;
@@ -93,10 +97,10 @@ a {
 }
 
 header {
-  background-color: #333;
+  /*background-color: #333;*/
   /*background-color: #F4712D;*/
   /*border: 1px solid red;*/
-  padding: 0;
+  /*padding: 0;*/
 
 }
 
@@ -107,7 +111,7 @@ header h1 {
 
 header h1 a {
   text-decoration: none;
-  color: white;
+  color: black;
 }
 header p {
   font-size: 1.5em;
