@@ -9,12 +9,6 @@ html,body {
   height: 400px;
 }
 
-.bottom-banner {
-  height: 500px;
-  background: url('../skyline.jpeg');
-  background-size: cover;
-}
-
 .bottom-banner p {
   font-size: 1.2em;
 }
@@ -47,10 +41,8 @@ a:hover {
 }
 
 .welcome-description{
-  color: red;
-  font-weight: bold;
+  color: white;
   font-size: 1.1em;
-  
 }
 
 .content h1 {
@@ -71,12 +63,8 @@ a:hover {
 
 .jumbotron {
   height: 500px;
-  background: url('../background.jpeg');
-
-  /*background: url('../snow.jpeg');*/
+  background: url('../intro2.jpeg');
   background-size: cover;
-  /*background-color: red;*/
-  /*border: 1px solid red;*/
 }
 
 .jumbotron p {
@@ -95,18 +83,27 @@ a:hover {
 }
 
 .bottom-banner {
+  height: 350px;
+  background: url('../bottom.jpeg');
+  background-size: cover;
   color: black;
   text-align: center;
-  font-family: 'Ubuntu';
 }
 
 .bottom-banner h2 {
- font-size: 1.5em;
- padding-top: 50px;
+  font-size: 1.5em;
+  padding-top: 50px;
 }
 
 .bottom-banner a {
- color: blue;
+  color: blue;
+  font-family: 'Ubuntu', sans-serif;
+  color: black;
+}
+
+.bottom-banner a:hover {
+  text-decoration: none;
+  color: red;
 }
 
 img {
