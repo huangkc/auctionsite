@@ -49,6 +49,8 @@ a:hover {
 .welcome-description{
   color: red;
   font-weight: bold;
+  font-size: 1.1em;
+  
 }
 
 .content h1 {
