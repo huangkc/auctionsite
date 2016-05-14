@@ -6,7 +6,7 @@
 
 			<button class="btn-sm" type="submit"><a class="sign_up" href="/users/new">Get Started Now</a></button>
 			
-			<button class="btn-sm" type="submit"><a class="login" href="/sessions/new">Have an Account? Log in</a></button>
+			<button class="btn-sm" type="submit"><a class="sign_up" href="/sessions/new">Have an Account? Log in</a></button>
 	</div>
 </div>
 
@@ -14,7 +14,7 @@
 	<div class="container">
 		<h3>Click on the links below to see product details</h3>
 		<ul class="product-list">
-			<% @items.each do|item| %>	
+			<% @items.each do |item| %>	
 			<li><a href="/items/<%= item.id%>"><%= item.title %></li></a>
 			<% end %>
 		</ul>
@@ -29,6 +29,16 @@
 		</ol>
 	</div>
 </div>
+
+<div class="row">
+	<div class="container">
+        <div class="col-md-4"></div>
+        <div class="col-md-4"></div>
+        <div class="col-md-4"></div>
+	</div>
+</div>
+
+
 
 <div class="bottom-banner">
 	<div class="container">
