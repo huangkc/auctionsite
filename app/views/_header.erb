@@ -1,13 +1,21 @@
-<header>
-  <a href="/"><p><img src="https://www.allaboutbirds.org/guide/PHOTO/LARGE/Bobolink-Vyn_060513_0010.jpg" alt text="Bobolink"></p></a>
-  <!-- <h1><a href = "/">HOME</a></h1> -->
-  <p>
+<header class="navbar">
+<!--   <a href="/"><img src="https://www.allaboutbirds.org/guide/PHOTO/LARGE/Bobolink-Vyn_060513_0010.jpg" alt text="Bobolink"></a> -->
+  
     <% if current_user %>
-      <a class="hello" href="/users/<%= current_user.id %>">Hi, <%= @current_user.username %></a>
-      <a class="logout" href="/logout">logout</a>
+    <p>  
+      <a class="login" href="/">home</a>
+      <!-- <a class="login" href="/">about</a> -->
+      <!-- <a class="sign_up" href="/">contact</a>   -->
+      <a class="login" href="/users/<%= current_user.id %>">Hi, <%= @current_user.username %></a>
+      <a class="login" href="/logout">logout</a>
+    </p>
     <% else %>
-      <a class="login" href="/sessions/new">login</a>
-      <a class="sign_up" href="/users/new">sign up</a>
-      <% end %>
-  </p>
+    <p>
+      <a class="login" href="/">home</a>  
+<!--       <a class="login" href="/">about</a> -->
+      <!-- <a class="sign_up" href="/">contact</a> -->
+      <a class="login" href="/sessions/new">log in</a>
+      <a class="login" href="/users/new">join</a>
+    </p>
+    <% end %>
 </header>

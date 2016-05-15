@@ -50,6 +50,11 @@ end
 #   redirect "/users/#{@user.id}"
 # end
 
-
+##delete user
+# delete '/users/:id' do
+  # user = User.find(params[:id])
+  # user.destroy
+  # redirect '/'
+# end
 
 
