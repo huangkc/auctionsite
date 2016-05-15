@@ -4,7 +4,7 @@
     <% if current_user %>
     <p>  
       <a class="login" href="/">home</a>
-      <a class="login" href="/">about</a>
+      <!-- <a class="login" href="/">about</a> -->
       <!-- <a class="sign_up" href="/">contact</a>   -->
       <a class="login" href="/users/<%= current_user.id %>">Hi, <%= @current_user.username %></a>
       <a class="login" href="/logout">logout</a>
