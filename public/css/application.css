@@ -125,6 +125,8 @@ ul {
 
 .btn {   
   outline: none;
+  font-family: 'Ubuntu', sans-serif;
+
   display: inline-block;
   -webkit-box-sizing: content-box;
   -moz-box-sizing: content-box;
@@ -140,6 +142,7 @@ ul {
 }
 
 .btn-sm{
+  font-family: 'Ubuntu', sans-serif;
   border: none;
   border-radius: 2px;
   display: inline-block;
