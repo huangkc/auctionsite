@@ -54,6 +54,11 @@ a:hover {
 }
 
 /* LAYOUT */
+.space {
+  height: 30px;
+  width: 100%;
+}
+
 .container {
   margin:0 auto;
   overflow:hidden;
