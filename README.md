@@ -1,4 +1,6 @@
-This CRUD application is a simplified version of an online auction site where users can place bids on items and manage their own inventory. It is deployed at https://auctionsite.herokuapp.com/.
+The Blind Auctioneer is an online auction site where users can place bids on items and manage their own inventory. 
+
+[Live Link](https://auctionsite.herokuapp.com/)
 
 #### All Users Can
 
@@ -15,9 +17,6 @@ This CRUD application is a simplified version of an online auction site where us
 - List new items
 - Place bids on items
 - Have a profile showing their listing and bidding activity
-
-
-###CRUD
 
 The user's profile page is where users are able to manage their listed items.
 
